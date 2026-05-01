@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MAV Lung Sound Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>MAV Lung Sound Playback Demo</h1>
+<p>Digital auscultation: capture → store → playback → AI (future)</p>
+
+<div class="buttons">
+    <button onclick="playSound('Normal_Healthy.wav', 'Normal / Healthy')">Normal</button>
+    <button onclick="playSound('COPD.wav', 'COPD')">COPD</button>
+    <button onclick="playSound('Pneumonia.wav', 'Pneumonia')">Pneumonia</button>
+    <button onclick="playSound('Asthma.wav', 'Asthma')">Asthma</button>
+    <button onclick="playSound('Bronchiectasis.wav', 'Bronchiectasis')">Bronchiectasis</button>
+</div>
+
+<h3 id="status">Select a sound</h3>
+
+<audio id="audioPlayer" controls></audio>
+
+<canvas id="waveformCanvas"></canvas>
+
+<h3>Energy vs Frequency</h3>
+<img id="spectrumImage" src="" width="600">
+
+<script src="app.js"></script>
+
+</body>
+</html>
