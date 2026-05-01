@@ -1,3 +1,9 @@
+.disclaimer {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 body {
     font-family: Arial;
     text-align: center;
